@@ -89,8 +89,8 @@ const HeroSection = () => {
               />
             </div>
             
-            {/* Floating testimonial card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg max-w-xs">
+            {/* Floating testimonial card - hidden on mobile */}
+            <div className="hidden md:block absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg max-w-xs">
               <div className="flex text-yellow-400 text-sm mb-1">★★★★★</div>
               <p className="text-sm text-gray-700 font-medium">
                 "The suits looked perfect on the day – couldn't have been easier!"
