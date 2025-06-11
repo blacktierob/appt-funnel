@@ -91,10 +91,12 @@ const ProblemSolutionSection = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            "From sizing chaos to style disagreements, getting the groomsmen sorted can be stressful. 
-            At Black Tie Menswear, we make it easy with expert fittings, timeless options, and personal service from day one."
-          </p>
+          <div className="bg-slate-800 text-white p-6 rounded-xl shadow-lg max-w-3xl mx-auto">
+            <p className="text-xl leading-relaxed">
+              "From sizing chaos to style disagreements, getting the groomsmen sorted can be stressful. 
+              At Black Tie Menswear, we make it easy with expert fittings, timeless options, and personal service from day one."
+            </p>
+          </div>
         </div>
       </div>
     </section>

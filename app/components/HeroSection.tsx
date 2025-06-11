@@ -11,7 +11,7 @@ const HeroSection = () => {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 py-12 md:py-20 lg:py-32 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
