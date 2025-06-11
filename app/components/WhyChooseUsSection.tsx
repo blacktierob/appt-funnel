@@ -1,3 +1,5 @@
+'use client'
+
 const WhyChooseUsSection = () => {
   const scrollToBooking = () => {
     const bookingSection = document.getElementById('booking')
