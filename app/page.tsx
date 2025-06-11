@@ -8,11 +8,10 @@ import BookingSection from './components/BookingSection'
 import FAQSection from './components/FAQSection'
 import TestimonialsSection from './components/TestimonialsSection'
 import LocationSection from './components/LocationSection'
-import StickyBookingButton from './components/StickyBookingButton'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white pb-24 md:pb-0">
+    <main className="min-h-screen bg-white">
       <HeroSection />
       <ProblemSolutionSection />
       <WhyChooseUsSection />
@@ -23,7 +22,6 @@ export default function Home() {
       <FAQSection />
       <TestimonialsSection />
       <LocationSection />
-      <StickyBookingButton />
     </main>
   )
 } 

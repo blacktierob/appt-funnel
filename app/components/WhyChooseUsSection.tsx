@@ -62,9 +62,12 @@ const WhyChooseUsSection = () => {
             <h3 className="text-2xl font-bold mb-4">
               Ready to Make Your Wedding Suits One Less Thing to Worry About?
             </h3>
-            <p className="text-lg opacity-90">
+            <p className="text-lg opacity-90 mb-6">
               Join hundreds of couples who trusted us with their special day.
             </p>
+            <button className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl">
+              Book Your Appointment
+            </button>
           </div>
         </div>
       </div>
