@@ -1,4 +1,11 @@
 const WhyChooseUsSection = () => {
+  const scrollToBooking = () => {
+    const bookingSection = document.getElementById('booking')
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const features = [
     {
       icon: "👔",
@@ -65,7 +72,10 @@ const WhyChooseUsSection = () => {
             <p className="text-lg opacity-90 mb-6">
               Join hundreds of couples who trusted us with their special day.
             </p>
-            <button className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl">
+            <button 
+              onClick={scrollToBooking}
+              className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            >
               Book Your Appointment
             </button>
           </div>

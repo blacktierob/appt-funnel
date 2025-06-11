@@ -50,9 +50,9 @@ const PopularSuitsSection = () => {
   }, [])
 
   return (
-    <section className="section-padding bg-slate-50">
+    <section className="py-12 md:py-20 bg-slate-50">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             See Our Customers' Favourites
           </h2>
@@ -64,9 +64,9 @@ const PopularSuitsSection = () => {
         
                  {/* Carousel Container */}
          <div className="relative">
-           {/* Feathered edges */}
-           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-50 to-transparent z-20 pointer-events-none"></div>
-           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-50 to-transparent z-20 pointer-events-none"></div>
+           {/* Feathered edges - hidden on mobile */}
+           <div className="hidden md:block absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-50 to-transparent z-20 pointer-events-none"></div>
+           <div className="hidden md:block absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-50 to-transparent z-20 pointer-events-none"></div>
            
            {/* Navigation Arrows */}
            <button
