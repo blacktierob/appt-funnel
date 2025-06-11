@@ -109,7 +109,7 @@ const TestimonialsSection = () => {
             <p className="text-lg opacity-90 mb-6">
               Your perfect wedding suit experience is just one appointment away.
             </p>
-            <div className="flex items-center justify-center space-x-8 text-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm">
               <div className="flex items-center">
                 <span className="text-yellow-400 text-2xl mr-2">★★★★★</span>
                 <span>{GOOGLE_REVIEWS_RATING}/5 Average Rating</span>
