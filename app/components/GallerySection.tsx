@@ -117,16 +117,7 @@ const GallerySection = () => {
                   </div>
                 </div>
                 
-                {/* Testimonial overlay on first image */}
-                {index === 0 && (
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white p-6 rounded-xl shadow-xl max-w-xs w-full mx-4">
-                    <div className="flex text-yellow-400 text-lg mb-2 justify-center">★★★★★</div>
-                    <blockquote className="text-sm italic text-gray-700 mb-2 text-center">
-                      "The suits looked perfect on the day – couldn't have been easier!"
-                    </blockquote>
-                    <cite className="text-xs text-gray-500 text-center block">– James M., Surrey</cite>
-                  </div>
-                )}
+
               </div>
             ))}
           </div>
