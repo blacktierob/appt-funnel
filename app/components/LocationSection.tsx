@@ -18,9 +18,9 @@ const LocationSection = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                {BUSINESS_NAME}
-              </h3>
+                             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                 {BUSINESS.name}
+               </h3>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
