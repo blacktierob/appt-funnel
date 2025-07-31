@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { BOOKING_URL, PHONE_NUMBER } from '../config/constants'
+import { BOOKING_URL } from '../config/constants'
+import { BUSINESS, BOOKING_SECTION } from '../config/content'
 
 const BookingSection = () => {
   const [formData, setFormData] = useState({
@@ -118,13 +119,13 @@ const BookingSection = () => {
             
             <div className="text-center">
               <p className="text-sm text-gray-500 mb-2">
-                Prefer to speak to someone first?
+                {BOOKING_SECTION.alternativeContact.title}
               </p>
               <a 
-                href={`tel:${PHONE_NUMBER}`} 
+                href={`tel:${BUSINESS.phone}`} 
                 className="font-semibold text-slate-800 hover:underline text-lg"
               >
-                Call us: {PHONE_NUMBER}
+                Call us: {BUSINESS.phone}
               </a>
             </div>
 

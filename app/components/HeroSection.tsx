@@ -1,6 +1,6 @@
 'use client'
 
-import { YEARS_EXPERIENCE, IMAGES } from '../config/constants'
+import { BUSINESS, HERO } from '../config/content'
 
 const HeroSection = () => {
   const scrollToBooking = () => {
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 <span>Google Reviews</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
-              <span>{YEARS_EXPERIENCE} Years Experience</span>
+              <span>{BUSINESS.yearsExperience} Years Experience</span>
               <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
               <span>Family-Owned & Venue Recommended</span>
             </div>
@@ -79,12 +79,12 @@ const HeroSection = () => {
           <div className="relative animate-slide-up">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={IMAGES.hero.main}
-                alt="Elegant groom and groomsmen in morning suits"
+                src={HERO.image.src}
+                alt={HERO.image.alt}
                 className="w-full h-full object-cover"
                 loading="eager"
                 onError={(e) => {
-                  e.currentTarget.src = IMAGES.hero.fallback
+                  e.currentTarget.src = HERO.image.fallback
                 }}
               />
             </div>

@@ -1,14 +1,14 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { IMAGES } from '../config/constants'
+import { GALLERY } from '../config/content'
 
 const GallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isScrolling, setIsScrolling] = useState(false)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
 
-  const galleryImages = IMAGES.gallery
+  const galleryImages = GALLERY.images
 
   const nextSlide = () => {
     if (isScrolling) return

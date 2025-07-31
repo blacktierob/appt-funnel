@@ -1,14 +1,14 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { IMAGES } from '../config/constants'
+import { POPULAR_SUITS } from '../config/content'
 
 const PopularSuitsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isScrolling, setIsScrolling] = useState(false)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
 
-  const popularSuits = IMAGES.suits
+  const popularSuits = POPULAR_SUITS.suits
 
   const nextSlide = () => {
     if (isScrolling) return

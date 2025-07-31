@@ -1,4 +1,4 @@
-import { BUSINESS_NAME, ADDRESS, PHONE_NUMBER, EMAIL, WEBSITE } from '../config/constants'
+import { BUSINESS, LOCATION } from '../config/content'
 
 const LocationSection = () => {
   return (
@@ -28,8 +28,8 @@ const LocationSection = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Address</p>
                     <p className="text-gray-600">
-                      {ADDRESS.street}<br />
-                      {ADDRESS.postcode}
+                      {BUSINESS.address.street}<br />
+                      {BUSINESS.address.postcode}
                     </p>
                   </div>
                 </div>
@@ -39,10 +39,10 @@ const LocationSection = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
                     <a 
-                      href={`tel:${PHONE_NUMBER}`} 
+                      href={`tel:${BUSINESS.phone}`} 
                       className="text-slate-800 hover:underline font-medium"
                     >
-                      {PHONE_NUMBER}
+                      {BUSINESS.phone}
                     </a>
                   </div>
                 </div>
@@ -52,10 +52,10 @@ const LocationSection = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
                     <a 
-                      href={`mailto:${EMAIL}`} 
+                      href={`mailto:${BUSINESS.email}`} 
                       className="text-slate-800 hover:underline"
                     >
-                      {EMAIL}
+                      {BUSINESS.email}
                     </a>
                   </div>
                 </div>
@@ -65,12 +65,12 @@ const LocationSection = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Website</p>
                     <a 
-                      href={WEBSITE} 
+                      href={BUSINESS.website} 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-slate-800 hover:underline"
                     >
-                      {WEBSITE.replace('https://', '')}
+                      {BUSINESS.website.replace('https://', '')}
                     </a>
                   </div>
                 </div>

@@ -1,4 +1,4 @@
-import { GOOGLE_REVIEWS_RATING, TOTAL_REVIEWS, YEARS_EXPERIENCE } from '../config/constants'
+import { BUSINESS, TESTIMONIALS } from '../config/content'
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -112,12 +112,12 @@ const TestimonialsSection = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm">
               <div className="flex items-center">
                 <span className="text-yellow-400 text-2xl mr-2">★★★★★</span>
-                <span>{GOOGLE_REVIEWS_RATING}/5 Average Rating</span>
+                <span>{BUSINESS.googleRating}/5 Average Rating</span>
               </div>
               <div className="hidden sm:block w-px h-6 bg-white opacity-30"></div>
-              <span>{TOTAL_REVIEWS} Google Reviews</span>
+              <span>{BUSINESS.totalReviews} Google Reviews</span>
               <div className="hidden sm:block w-px h-6 bg-white opacity-30"></div>
-              <span>{YEARS_EXPERIENCE} Years Experience</span>
+              <span>{BUSINESS.yearsExperience} Years Experience</span>
             </div>
           </div>
         </div>
